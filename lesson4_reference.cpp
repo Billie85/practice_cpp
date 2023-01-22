@@ -16,7 +16,7 @@ int main(void)
 }
  */
 
-/* #include <iostream>
+#include <iostream>
 
 int main(void)//NO
 {
@@ -27,7 +27,7 @@ int main(void)//NO
 	ref = b;
 	std::cout << &ref << std::cout;
 }
- */
+
 
 #define LOG(x) std::cout << x << std::endl;
 
