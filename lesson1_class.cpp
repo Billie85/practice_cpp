@@ -3,27 +3,25 @@
 class lesson1_class
 {
 private:
-		int x;
-		int y;
+	std::string name;
+	void print(std::string n);
 public:
-	int getValue ()
-	{
-		return (this->x + this->y);
-	}
-
-	void setValue (int value1, int value2)
-	{
-		this->x = value1;
-		this->y = value2;
-	}
+	lesson1_class(std::string zombi);
 };
+
+void lesson1_class::print(std::string n)
+{
+	std::cout << n << std::endl;
+}
+
+lesson1_class::lesson1_class(std::string zombi)
+{
+	this->name = zombi;
+	print(this->name);
+}
 
 int main(void)
 {
-	lesson1_class hoge;
-	int total;
-
-	hoge.setValue(10, 30);
-	total = hoge.getValue();
-	std::cout << total << std::endl;
+	lesson1_class lesson1_class("ayumi");
+	return 0;
 }
