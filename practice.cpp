@@ -51,10 +51,9 @@ int main()
     int x = 21;
     test t0;
     test t1(42);
-    test t2(&x);
-    test t3("36");
+    test t2(&x); 
+    test t3("36"); 
     test t4(99.87);
-
     std::cout<< "t0" << t0.get_i() << std::endl;//0
     std::cout<< "t1" << t1.get_i() << std::endl;//42
     std::cout<< "t2" << t2.get_i() << std::endl;//21
