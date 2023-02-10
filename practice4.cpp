@@ -6,7 +6,7 @@ class test
 private:
 public:
     int i;
-    const int j ;
+    const int j;
     //test(){i = 0; j = 0;}
     test(int x, int y) : j(y)
 	{i = x;
@@ -16,7 +16,6 @@ public:
 		std::cout << " Copy constructor called " << std::endl;
 		//this->operator=(hoge);
 	}
-
     int get_i(){return this->i;}
     int get_j(){return this->j;}
  /*    test &operator=(test&b)//operator=は外に出してはいけない。
@@ -28,7 +27,6 @@ public:
 	} */
     //~test();
 };
-
 	std::ostream &operator<< (std::ostream &os, test &t)
 	{
 		os << t.get_i() <<' '<< t.get_j();
